@@ -1,0 +1,10 @@
+sudo: false
+language: ruby
+gemfile:
+  - gemfiles/paperclip_4.gemfile
+  - gemfiles/paperclip_5.gemfile
+rvm:
+  - 2.2
+  - 2.3
+  - 2.4.0
+before_install: gem install bundler -v 1.15.3

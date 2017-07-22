@@ -1,5 +1,6 @@
 sudo: false
 language: ruby
+cache: bundler
 gemfile:
   - gemfiles/paperclip_4.gemfile
   - gemfiles/paperclip_5.gemfile
@@ -8,3 +9,9 @@ rvm:
   - 2.3
   - 2.4.0
 before_install: gem install bundler -v 1.15.3
+notifications:
+  email:
+    on_success: never
+    on_failure: always
+  slack:
+    secure: DmyPi20PAitINOQufkmovBNTAn2VsSREoReyvM7pmmVOzO7lHE4WPnuieRfmnn6XQsFaSjljjYmlSygY42MhQYPAyaFstHedNL9RaK9u8swWkRbms91RjygHg9tWJclPJpIcSMTdDea5B8LjQjGQNE8eveUF+DVScvVkKjRLlU8J1x2Ph7rUKYXZifwyYufoI2X0Gu9rsSao6vyYELZp1nqnkJt/3geify7d8Ffd1Ww6R7wz5tGPKtv5DAfRkJJx0VY8ZGEIsat+0OY77vUeUUvrYtCCb7aUWMfHOdNWmXPh8gBZo7Nd8geIaWLnsS1C0RQV7gB9+GBjXNO6zJruhUxFxgg52mwr7/DxLvJ9fiap26PSjesjtLP51Doz8zETvGRaOIujGgDyAktHjvaGweySxc31OKshWF7P00gqIgwuObo/LUoPnTXo3Z5Yy3VcDOTfGUof3+zA5ajlmKU+oLzJko5e6byoFzwstRLHna5mmOjw9QveUOJA4oXHRUAnsoZ/+3Vw/QANXbFFsU+vEa1rYholTk1ll9WmK1TPt+OYacJ+ik8WoP2lDYneCnxG0Xgdew7P2IR5ldnrNHfz9qlQOeARDMst+13wGxLDCz+HJJDcKE14y/CtDE7ikYWCnyffW4l4+nBidf0BqkI4B09O9pZmqUzw+M0HLXLePzg=
